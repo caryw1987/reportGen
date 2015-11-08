@@ -1,0 +1,9 @@
+.toggler {
+	width: 600px;
+	margin: 0px auto;
+}
+
+#button {
+	padding: .5em 1em;
+	text-decoration: none;
+}

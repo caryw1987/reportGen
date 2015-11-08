@@ -1,0 +1,27 @@
+<!DOCTYPE validators PUBLIC "-//Apache Struts//XWork Validator 1.0//EN" "http://struts.apache.org/dtds/xwork-validator-1.0.dtd">
+<validators> 
+    <field name ="wordAttrDateIn"> 
+        <field-validator type ="regex"> 
+        	<param name="regex">[0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]</param>
+            <message> yyyy-mm-dd format </message> 
+        </field-validator> 
+    </field>  
+    <field name ="report.dateIn"> 
+        <field-validator type ="regex">
+        	<param name="regex">[0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]</param> 
+            <message> yyyy-mm-dd format </message> 
+        </field-validator> 
+    </field> 
+    <field name ="report.bvDueDate"> 
+        <field-validator type ="regex">
+        	<param name="regex">[0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]</param>
+            <message> yyyy-mm-dd format </message> 
+        </field-validator> 
+    </field> 
+    <field name ="report.dueDate"> 
+        <field-validator type ="regex"> 
+        	<param name="regex">[0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]</param>
+            <message> yyyy-mm-dd format </message> 
+        </field-validator> 
+    </field> 
+</validators>

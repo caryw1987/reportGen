@@ -1,0 +1,58 @@
+    create database report_gen;
+
+ 	create table report_gen.user(
+		puid varchar(40) not null,        
+		login varchar(40) not null,     
+		password varchar(40) not null, 
+		name varchar(40) null,
+		email varchar(50) null, 
+		tel varchar(20) null,
+		privilege varchar(100) null,               
+		primary key (puid)
+    );
+	
+	insert into report_gen.user(puid, login, password, name, privilege) values('asdfghjrf','admin', 'admin', 'admin', 'admin');
+	create table report_gen.report(
+        puid varchar(40) not null,        
+	    required_w_d varchar(40) null,
+	    date_in varchar(40) null,
+	    bv_due_date varchar(40) null,
+	    due_date varchar(40) null,
+		date_out varchar(40) null,
+		client varchar(40) null,
+		po_no varchar(40) null,
+		billing_to varchar(40) null,
+		invoice_type int default 0,
+		master_sample_no varchar(40) null,
+		report_no varchar(40) null,
+		special_item varchar(40) null,
+		vendor varchar(100) null,
+		sample_description varchar(500) null,
+		price float null,
+		test_group varchar(40) null,
+		status int default 0,
+		holding_reason varchar(40) null,
+		late_reason varchar(40) null,
+		engineer varchar(40) null,
+		report_checker varchar(40) null,
+		report_sender varchar(40) null,
+		log_status int default 0,
+		op_logout_time varchar(40) null,
+		recorder varchar(40) null,
+		department varchar(40) null,
+		result_login_status int default 0,
+		result_login_time varchar(40) null,
+		result_login_pending_time varchar(400) null,
+		generate_start_time varchar(100) null,
+		generate_end_time varchar(100) null, 
+		generate_status int default 0,
+		check_status int default 0,
+		check_failed_time varchar(400) null,
+		send_status int default 0,
+		report_path varchar(600) null,
+		report_relative_path varchar(600) null,
+		money_type int default 0,
+		other_money_type varchar(40),
+		over_all_status int default 0,
+        primary key (puid)
+    );

@@ -1,0 +1,28 @@
+.toggler {
+	width: 600px;
+	margin: 0px auto;
+}
+
+#button {
+	padding: .5em 1em;
+	text-decoration: none;
+}
+
+.registtable{
+	
+}
+
+.col1{
+	width:180px;
+	height:38px;
+}
+.col2{
+	width:140px;
+	text-align:left;
+}
+.col3{
+	width:320px;
+}
+.col4{
+	width:200px;
+}

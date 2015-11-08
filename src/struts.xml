@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<!-- 是否开启动态方法，动态方法调用格式actionName!methodName.action,不推荐该方式 -->
+	<constant name="struts.enable.DynamicMethodInvocation" value="false" />
+	<!-- 开发模式下使用可以打印出详细的错误信息 -->
+	<constant name="struts.devMode" value="true" />
+	<!-- 指定编码集 -->
+	<constant name="struuts.i18n.encoding" value="UTF-8"></constant>
+	<!-- 指定使用国际化资源struts2 -->
+	<constant name="struts.custom.i18n.resources" value="donglusoft"></constant>
+	<!-- 指定浏览器是否缓存静态内容 -->
+	<constant name="struts.serve.static.browserCache" value="false"></constant>
+	<!-- 指定struts配置文件修改后是否自动重新加载文件 -->
+	<constant name="struts.configuration.xml.reload" value="true"></constant>
+	<!-- 与spring集成，指定由spring负责action的创建 -->
+	<constant name="struts.objectFactory" value="spring"></constant>
+	<!-- 上传文件的大小限制 -->
+	<constant name="struts.multipart.maxSize" value="52428800"></constant>
+	<!-- 上传文件的临时路径 -->
+	<constant name="struts.multipart.saveDir" value="/tmp" />
+	<!-- 启动静态方法的访问 -->
+	<constant name="struts.ognl.allowStaticMethodAccess" value="true"></constant>
+
+	<package name="default" namespace="/" extends="struts-default,json-default">
+		<default-action-ref name="index" />
+<!-- 		<global-results> -->
+<!-- 			<result name="login">/login.jsp</result> -->
+<!-- 			<result name="error">/404.jsp</result> -->
+<!-- 		</global-results> -->
+<!-- 		<global-exception-mappings> -->
+<!-- 			<exception-mapping result="error" exception="java.lang.Exception"></exception-mapping> -->
+<!-- 		</global-exception-mappings> -->
+<!-- 		<action name="index"> -->
+<!-- 			<result type="dispatcher"> -->
+<!-- 				/WEB-INF/pages/index.jsp -->
+<!-- 			</result> -->
+<!-- 		</action> -->
+
+	</package>
+
+	<!-- 各模块struts配置文件 -->
+	<include file="conf/struts/*.xml"></include>
+</struts>    

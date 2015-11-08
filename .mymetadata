@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="reportGen"
+  id="myeclipse.1406357048242"
+  context-root="/reportGen"
+  j2ee-spec="6.0"
+  archive="reportGen.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+
+<struts>
+	<package name="report" namespace="/" extends="default">
+		<action name="reportAction_*" class="reportAction" method="{1}">
+			<result name="ADD_SUCESSED">/list_reports_4recorder.jsp</result>
+			<result name="ADD_FAILED">/add_report.jsp</result>
+			<result name="ADD_REPORT_JSP">/add_report.jsp</result>
+			<result name="ADD_MULTI_REPORT_JSP">/add_multi_report.jsp</result>
+			<result name="IMPORT_REPORT_JSP">/import_reports.jsp</result>
+			<result name="LIST_REPORTS_4RECORDER">/list_reports_4recorder.jsp</result>
+			<result name="LIST_REPORTS_4ENTRYPERSON">/list_reports_4EntryPerson.jsp</result>
+			<result name="LIST_REPORTS_4RESULTLOGIN">/list_reports_4ResultLogin.jsp</result>
+			<result name="LIST_REPORTS_4GENWORD">/list_reports_4GenWord.jsp</result>
+			<result name="LIST_REPORTS_4CHECK">/list_reports_4Check.jsp</result>
+			<result name="LIST_REPORTS_4SEND">/list_reports_4Send.jsp</result>
+			<result name="LIST_REPORTS_4ADD_PRICE">/list_reports_4Price.jsp</result>
+			<result name="LIST_REPORTS_4STATISTICS">/list_reports_4Statistics.jsp</result>
+			<result name="SEARCH_RESULT_4_STATISTICS">/list_reports_4Statistics.jsp</result>
+			<result name="LIST_REPORTS_4PROGRESS">/list_reports_4progress.jsp</result>
+			<result name="SEARCH_RESULT_4PROGRESS">/list_reports_4progress.jsp</result>
+			<result name="SEARCH_RESULT">/list_reports_4Send.jsp</result>
+			<result name="SEARCH_RESULT_4_RESULT_LOGIN">/list_reports_4ResultLogin.jsp</result>
+			<result name="SEARCH_RESULT_4_PRICE">/list_reports_4Price.jsp</result>
+			<result name="EDIT_REPORT_JSP">/edit_report.jsp</result>
+			<result name="EDIT_REPORT_JSP_4RECORDER">/edit_report_4recorder.jsp</result>
+			<result name="EDIT_REPORT_JSP_4ENTRYPERSON">/edit_report_4EntryPerson.jsp</result>
+			<result name="ADD_PRICE_JSP">/add_price.jsp</result>
+			<result name="GEN_REPORT_JSP">/gen_report.jsp</result>
+			<result name="GENERATE_ONLY_SUCCESS">/gen_word_only.jsp</result>
+			<result name ="NUMBER_FORMAT_ERROR">/number_format_error.jsp</result>
+			<result type="json" name="RESULTLOGIN">
+ 				<param name="root">jsonReportId</param> 
+			</result>
+			<result type="json" name="RESULTLOGINPENDING">
+ 				<param name="root">jsonReportId</param> 
+			</result>
+			<result type="json" name="CHECK_OK">
+ 				<param name="root">jsonReportId</param> 
+			</result>
+			<result type="json" name="CHECK_NOK">
+ 				<param name="root">jsonReportId</param> 
+			</result>
+			<result type="json" name="SEND_OK">
+ 				<param name="root">jsonReportId</param> 
+			</result>
+			<result type="json" name="FIND_IMAGE_SUCCESS">
+ 				<param name="root">imagePathMap</param> 
+			</result>
+			<result type="json" name="SET_DONE">
+ 				<param name="root">jsonReportId</param> 
+			</result>
+			<result type="json" name="SET_UN_DONE">
+ 				<param name="root">jsonReportId</param> 
+			</result>
+		</action>
+	</package>
+</struts>

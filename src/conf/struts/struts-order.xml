@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+
+<struts>
+	<package name="order" namespace="/" extends="default">
+		<action name="orderAction_*" class="orderAction" method="{1}">
+			<result name="ADD_SUCESSED">/list_orders.jsp</result>
+			<result name="ADD_FAILED">/add_user.jsp</result>
+			<result name="LOGIN_SUCCESSED">/work_bench_main.jsp</result>
+			<result name="LOGIN_FAILED">/login.jsp</result>
+			<result name="ADD_ORDER_JSP">/add_order.jsp</result>
+			<result name="LIST_USERS">/list_users.jsp</result>
+			<result name="EDIT_USER_JSP">/edit_user.jsp</result>
+		</action>
+	</package>
+</struts>
